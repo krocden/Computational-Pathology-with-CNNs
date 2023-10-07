@@ -26,7 +26,7 @@ We aim to leverage CNNs to automate tissue classification in computational patho
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/YourUsername/Computational-Pathology-with-CNNs.git
+git clone https://github.com/jonathan-githubofficial/COMP-432
 ```
 
 2. Install the required packages:
