@@ -1,6 +1,7 @@
 
 
-# COMP 432 - Computational Pathology with CNNs
+# COMP 432 - Computational Pathology with CNNs[ ![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/116-pvPd9r0IOFpRrVDMUmuK0WFgo33CD?usp=sharing)
+
 
 This repository contains the research and development of machine learning models, particularly Convolutional Neural Networks (CNNs), applied to computational pathology and computer vision tasks.
 
