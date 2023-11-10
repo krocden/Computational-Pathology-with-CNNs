@@ -2,6 +2,7 @@ import os
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 from PIL import Image
+import _init
 
 class Loader:
     def __init__(self, directory, batch_size=60, shuffle=True, transform=None):
@@ -13,6 +14,7 @@ class Loader:
             transforms.Resize((224, 224), antialias=False),
             # maybe more image manipulations
         ])
+        self.glb = _init.Config()
 
     def get_dataloader(self):
 
@@ -24,6 +26,6 @@ class Loader:
             dataset,
             batch_size=self.batch_size,
             shuffle=self.shuffle,
-            num_workers=os.cpu_count()  # 根据你的机器配置调整线程数
+            num_workers=os.cpu_count()
         )
         return dataloader
