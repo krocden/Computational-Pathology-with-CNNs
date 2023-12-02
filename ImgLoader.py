@@ -34,7 +34,6 @@ class Loader:
         test_size = len(dataset) - train_size
         train_dataset, test_dataset = random_split(dataset, [train_size, test_size])
 
-        # 创建 DataLoader
         train_loader = DataLoader(
             train_dataset,
             batch_size=self.batch_size,

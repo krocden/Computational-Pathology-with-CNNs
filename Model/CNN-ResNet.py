@@ -15,9 +15,9 @@ if __name__ == '__main__':
 
     # should change this to tweak the model
     hyperparam = {
-        'learning rate': 0.0001,
-        'epoch number': 10,
-        'batch size': 60,
+        'learning rate': 1e-5,
+        'epoch number': 7,
+        'batch size': 30,
     }
 
     image_path = "datasets/Dataset 1/Dataset 1/Colorectal Cancer"

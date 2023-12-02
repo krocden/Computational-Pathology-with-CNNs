@@ -1,5 +1,4 @@
 import copy
-
 import torch
 import torchvision.models as models
 import _init
@@ -8,10 +7,13 @@ from sklearn.metrics import classification_report
 from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 import numpy as np
+import os
+
 
 if __name__ == '__main__':
+    os.environ['LOKY_MAX_CPU_COUNT'] = '8'  # this set the concurrent core for generating the graph explicitly
     config = _init.Config()
-    seed = 4928  # change the seed to any Saved seed you want to load
+    seed = 28506  # change the seed to any Saved seed you want to load
     config.set_seed(seed)
     model = models.resnet18(weights=None)
     fc_in = model.fc.in_features
