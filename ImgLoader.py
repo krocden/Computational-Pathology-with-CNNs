@@ -32,7 +32,9 @@ class Loader:
 
         train_size = int(train_ratio * len(dataset))
         test_size = len(dataset) - train_size
-        train_dataset, test_dataset = random_split(dataset, [train_size, test_size])
+        train_dataset,  test_dataset, = random_split(dataset, [train_size, test_size])
+        self.traindataset = train_dataset
+        self.testdataset = test_dataset
 
         train_loader = DataLoader(
             train_dataset,
@@ -49,9 +51,3 @@ class Loader:
 
         return train_loader, test_loader
 
-        # self.data = DataLoader(
-        #     dataset,
-        #     batch_size=self.batch_size,
-        #     shuffle=self.shuffle,
-        #     num_workers=os.cpu_count()
-        # )
