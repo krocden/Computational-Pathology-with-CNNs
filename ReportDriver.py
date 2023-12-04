@@ -83,7 +83,6 @@ def visualize_TSNE(X, y):
 def draw_confusion_Matrix(y_true, y_pred, title):
     cm = confusion_matrix(y_true, y_pred)
     plt.figure(figsize=(10, 7))
-    #print(cm)
     sns.heatmap(cm, annot=True, fmt='.1f', cmap='Blues')
     plt.xlabel('Predicted')
     plt.ylabel('Truth')
@@ -98,7 +97,7 @@ def use_KNN(X_train, y_train, k, X_test, y_test):
     y_predtest = knn.predict(X_test)
     accuracy = accuracy_score(y_test, y_predtest)
     print(f"Accuracy: {accuracy:.4f}")
-    giveClassificationReport(y_train, y_predtrain, y_test, y_predtest,'KNN - Pretrained' if  usingPretrained else f'KNN - {seed}')
+    giveClassificationReport(y_train, y_predtrain, y_test, y_predtest,f"KNN - Pretrained - D{loader.directory.split('/')[1][-1]}" if  usingPretrained else f"KNN - {seed} - D{loader.directory.split('/')[1][-1]}")
     draw_confusion_Matrix(y_train, y_predtrain, f"train set on dataset {loader.directory.split('/')[1][-1]}: {loader.directory.split('/')[2]}")
     draw_confusion_Matrix(y_test, y_predtest, f"test set on dataset {loader.directory.split('/')[1][-1]}: {loader.directory.split('/')[2]}")
     print('Finished running KNN')
@@ -112,33 +111,10 @@ def use_SVM(X_train, y_train, X_test, y_test):
     svm.fit(X_train, y_train)
     trn_pred = svm.predict(X_train)
     tst_pred = svm.predict(X_test)
-    giveClassificationReport(y_train, trn_pred, y_test, tst_pred, 'SVM - Pretrained' if  usingPretrained else f'SVM - {seed}')
+    giveClassificationReport(y_train, trn_pred, y_test, tst_pred, f"SVM - Pretrained - D{loader.directory.split('/')[1][-1]}" if  usingPretrained else f"SVM - {seed} - D{loader.directory.split('/')[1][-1]}")
     draw_confusion_Matrix(y_train, trn_pred, f"train set on dataset {loader.directory.split('/')[1][-1]}: {loader.directory.split('/')[2]}")
     draw_confusion_Matrix(y_test, tst_pred, f"test set on dataset {loader.directory.split('/')[1][-1]}: {loader.directory.split('/')[2]}")
     print('Finished running SVM')
-
-"""
-def use_adaBoost(X_trn, y_trn, k, X_tst, y_tst):
-    print("now using adaBoost to predict")
-    boost = AdaBoostClassifier(n_estimators=k)
-    boost.fit(X_trn, y_trn)
-    trn_pred = boost.predict(X_trn)
-    tst_pred = boost.predict(X_tst)
-    giveClassificationReport(y_trn, trn_pred, y_tst, tst_pred)
-
-def use_random_forest(X_trn, y_trn, k, X_tst, y_tst):
-    print("now using random forest to predict")
-    forest = RandomForestClassifier(n_estimators=k)
-    forest.fit(X_trn, y_trn)
-    trn_pred = forest.predict(X_trn)
-    tst_pred = forest.predict(X_tst)
-    giveClassificationReport(y_trn, trn_pred, y_tst, tst_pred)
-
-    with open("Model/Saved/perf_metrics", 'a') as file:
-        perf_metrics = f"{title}: \n {train_report} \n {test_report}"
-        file.write(perf_metrics + '\n\n')
-"""
-
 
 if __name__ == '__main__':
     os.environ['LOKY_MAX_CPU_COUNT'] = '8'  # this set the concurrent core for generating the graph explicitly
@@ -159,7 +135,7 @@ if __name__ == '__main__':
     datasetClasses = [f.name for f in os.scandir(dataset_path3) if f.is_dir()]
     loader = ImgLoader.Loader(config, dataset_path3, shuffle=True)
     # Change to pretrained model else use self trained model
-    usingPretrained = True
+    usingPretrained = False
     train_set, test_set = loader.get_dataloader(train_ratio=0.7)
     print('Finished loading images')
 
@@ -213,28 +189,10 @@ if __name__ == '__main__':
     print("Got model features")
 
     # t-SNE
-    #visualize_TSNE(trn_feature, trn_label)
+    visualize_TSNE(trn_feature, trn_label)
 
     # KNN
     use_KNN(trn_feature, trn_label, 3, tst_feature, tst_label)
 
     # SVM
     use_SVM(trn_feature, trn_label, tst_feature, tst_label)
-
-
-    """
-    X_train, y_train, X_test, y_test = [], [], [], []
-
-    X_train = [i[0].numpy().flatten() for i in loader.traindataset]
-    y_train = [i[1] for i in loader.traindataset]
-
-    X_train = np.array(X_train)
-
-    X_test = [i[0].numpy().flatten() for i in loader.testdataset]
-    y_test = [i[1] for i in loader.testdataset]
-
-    X_test = np.array(X_test)
-    
-    #use_KNN(X_train, y_train, 3, X_test, y_test)
-    #use_SVM(X_train, y_train, X_test, y_test)
-    """
