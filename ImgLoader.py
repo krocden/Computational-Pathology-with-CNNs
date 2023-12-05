@@ -16,6 +16,7 @@ class Loader:
         self.transform = transform or transforms.Compose([
             transforms.ToTensor(),
             transforms.Resize((224, 224), antialias=False),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),  # Standard Normalization for ImageNet
             # maybe more image manipulations
         ])
         self.glb = config
