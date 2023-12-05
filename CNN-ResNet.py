@@ -18,8 +18,8 @@ if __name__ == '__main__':
     # should change this to tweak the model
     hyperparam = {
         'learning rate': 1e-5,
-        'epoch number': 10,
-        'batch size': 32,
+        'epoch number': 7,
+        'batch size': 30,
     }
 
     image_path = "datasets/Dataset 1/Colorectal Cancer"
@@ -93,18 +93,20 @@ if __name__ == '__main__':
 
     plt.figure()
     plt.title("Training and Validation Loss")
-    plt.plot(train_losses, labels = 'Training')
-    plt.plot(val_losses, labels = 'Validation')
+    plt.plot(train_losses, label = 'Training')
+    plt.plot(val_losses, label = 'Validation')
     plt.ylabel('Loss')
-    plt.xlabel('Epochs')
+    plt.xlabel('Step')
+    plt.legend(loc='best')
     plt.show()
 
     plt.figure()
     plt.title("Training and Validation Accuracy")
-    plt.plot(train_accuracy, labels = 'Training')
-    plt.plot(val_accuracy, labels = 'Validation')
+    plt.plot(train_accuracy, label = 'Training')
+    plt.plot(val_accuracy, label = 'Validation')
     plt.ylabel('Accuracy')
     plt.xlabel('Epochs')
+    plt.legend(loc='best')
     plt.show()
 
     with open("Model/Saved/hyperparameter_log", 'a') as file:
