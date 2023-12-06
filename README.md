@@ -61,7 +61,7 @@ Certainly! Here's the updated "Team Members" table with the provided information
 | Jainil Jaha     | 40067468 | [jjaha99](https://github.com/jjaha99)                   |
 | Yixin Liu       | 40115632 | [Jiejue233](https://github.com/Jiejue233)                |
 | Kevin Hong      | 40176625 | [krocden](https://github.com/krocden)                   |
-| Tracy Huang     | 40167688 | [prprtracy](https://github.com/prprtracy)                |
+| Yichen Huang     | 40167688 | [prprtracy](https://github.com/prprtracy)                |
 
 ---
 ## License
