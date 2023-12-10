@@ -1,0 +1,247 @@
+Model - 6436 - TrainD2: 
+               precision    recall  f1-score   support
+
+           0       0.40      0.89      0.55      1364
+           1       0.09      0.07      0.08      1417
+           2       0.00      0.00      0.00      1419
+
+    accuracy                           0.31      4200
+   macro avg       0.16      0.32      0.21      4200
+weighted avg       0.16      0.31      0.21      4200
+
+
+Model - 6436 - TestD2: 
+               precision    recall  f1-score   support
+
+           0       0.44      0.90      0.59       636
+           1       0.11      0.09      0.10       583
+           2       0.00      0.00      0.00       581
+
+    accuracy                           0.35      1800
+   macro avg       0.18      0.33      0.23      1800
+weighted avg       0.19      0.35      0.24      1800
+
+
+Model - 6436 - TrainD3: 
+               precision    recall  f1-score   support
+
+           0       0.36      0.30      0.32      1364
+           1       0.27      0.59      0.37      1417
+           2       0.00      0.00      0.00      1419
+
+    accuracy                           0.29      4200
+   macro avg       0.21      0.29      0.23      4200
+weighted avg       0.21      0.29      0.23      4200
+
+
+Model - 6436 - TestD3: 
+               precision    recall  f1-score   support
+
+           0       0.37      0.27      0.31       636
+           1       0.27      0.61      0.37       583
+           2       0.00      0.00      0.00       581
+
+    accuracy                           0.29      1800
+   macro avg       0.21      0.29      0.23      1800
+weighted avg       0.22      0.29      0.23      1800
+
+
+Model - 6436 - TrainD1: 
+               precision    recall  f1-score   support
+
+           0       1.00      0.96      0.98      1364
+           1       0.99      1.00      0.99      1417
+           2       0.97      0.99      0.98      1419
+
+    accuracy                           0.99      4200
+   macro avg       0.99      0.99      0.99      4200
+weighted avg       0.99      0.99      0.99      4200
+
+
+Model - 6436 - TestD1: 
+               precision    recall  f1-score   support
+
+           0       0.98      0.84      0.90       636
+           1       0.92      1.00      0.96       583
+           2       0.88      0.94      0.91       581
+
+    accuracy                           0.92      1800
+   macro avg       0.93      0.93      0.92      1800
+weighted avg       0.93      0.92      0.92      1800
+
+
+KNN - Pretrained D2: 
+               precision    recall  f1-score   support
+
+           0       0.93      0.99      0.96      1364
+           1       0.99      0.97      0.98      1417
+           2       1.00      0.96      0.98      1419
+
+    accuracy                           0.97      4200
+   macro avg       0.97      0.97      0.97      4200
+weighted avg       0.97      0.97      0.97      4200
+ 
+               precision    recall  f1-score   support
+
+           0       0.88      0.97      0.92       636
+           1       0.96      0.93      0.95       583
+           2       1.00      0.93      0.96       581
+
+    accuracy                           0.94      1800
+   macro avg       0.95      0.94      0.94      1800
+weighted avg       0.95      0.94      0.94      1800
+
+
+SVM - Pretrained D2: 
+               precision    recall  f1-score   support
+
+           0       1.00      0.99      0.99      1364
+           1       0.99      1.00      1.00      1417
+           2       1.00      1.00      1.00      1419
+
+    accuracy                           1.00      4200
+   macro avg       1.00      1.00      1.00      4200
+weighted avg       1.00      1.00      1.00      4200
+ 
+               precision    recall  f1-score   support
+
+           0       0.97      0.97      0.97       636
+           1       0.98      0.98      0.98       583
+           2       0.99      0.99      0.99       581
+
+    accuracy                           0.98      1800
+   macro avg       0.98      0.98      0.98      1800
+weighted avg       0.98      0.98      0.98      1800
+
+
+KNN - Pretrained D3: 
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      1364
+           1       1.00      1.00      1.00      1417
+           2       1.00      1.00      1.00      1419
+
+    accuracy                           1.00      4200
+   macro avg       1.00      1.00      1.00      4200
+weighted avg       1.00      1.00      1.00      4200
+ 
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       636
+           1       1.00      0.99      0.99       583
+           2       0.99      1.00      0.99       581
+
+    accuracy                           1.00      1800
+   macro avg       1.00      1.00      1.00      1800
+weighted avg       1.00      1.00      1.00      1800
+
+
+SVM - Pretrained D3: 
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      1364
+           1       1.00      1.00      1.00      1417
+           2       1.00      1.00      1.00      1419
+
+    accuracy                           1.00      4200
+   macro avg       1.00      1.00      1.00      4200
+weighted avg       1.00      1.00      1.00      4200
+ 
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00       636
+           1       1.00      0.99      0.99       583
+           2       0.99      1.00      0.99       581
+
+    accuracy                           1.00      1800
+   macro avg       1.00      1.00      1.00      1800
+weighted avg       1.00      1.00      1.00      1800
+
+
+KNN - 6436 - D2: 
+               precision    recall  f1-score   support
+
+           0       0.91      0.91      0.91      1364
+           1       0.92      0.92      0.92      1417
+           2       0.99      0.99      0.99      1419
+
+    accuracy                           0.94      4200
+   macro avg       0.94      0.94      0.94      4200
+weighted avg       0.94      0.94      0.94      4200
+ 
+               precision    recall  f1-score   support
+
+           0       0.87      0.86      0.87       636
+           1       0.87      0.87      0.87       583
+           2       0.97      0.99      0.98       581
+
+    accuracy                           0.91      1800
+   macro avg       0.91      0.91      0.91      1800
+weighted avg       0.91      0.91      0.91      1800
+
+
+SVM - 6436 - D2: 
+               precision    recall  f1-score   support
+
+           0       0.90      0.90      0.90      1364
+           1       0.91      0.91      0.91      1417
+           2       0.99      0.99      0.99      1419
+
+    accuracy                           0.93      4200
+   macro avg       0.93      0.93      0.93      4200
+weighted avg       0.93      0.93      0.93      4200
+ 
+               precision    recall  f1-score   support
+
+           0       0.91      0.89      0.90       636
+           1       0.90      0.91      0.91       583
+           2       0.98      0.99      0.99       581
+
+    accuracy                           0.93      1800
+   macro avg       0.93      0.93      0.93      1800
+weighted avg       0.93      0.93      0.93      1800
+
+
+KNN - 6436 - D3: 
+               precision    recall  f1-score   support
+
+           0       0.65      0.74      0.69      1364
+           1       0.79      0.72      0.75      1417
+           2       0.79      0.76      0.78      1419
+
+    accuracy                           0.74      4200
+   macro avg       0.75      0.74      0.74      4200
+weighted avg       0.75      0.74      0.74      4200
+ 
+               precision    recall  f1-score   support
+
+           0       0.45      0.48      0.46       636
+           1       0.52      0.48      0.50       583
+           2       0.56      0.56      0.56       581
+
+    accuracy                           0.51      1800
+   macro avg       0.51      0.51      0.51      1800
+weighted avg       0.51      0.51      0.51      1800
+
+
+SVM - 6436 - D3: 
+               precision    recall  f1-score   support
+
+           0       0.74      0.60      0.66      1364
+           1       0.71      0.78      0.74      1417
+           2       0.73      0.79      0.76      1419
+
+    accuracy                           0.72      4200
+   macro avg       0.73      0.72      0.72      4200
+weighted avg       0.73      0.72      0.72      4200
+ 
+               precision    recall  f1-score   support
+
+           0       0.68      0.56      0.61       636
+           1       0.65      0.72      0.68       583
+           2       0.66      0.71      0.68       581
+
+    accuracy                           0.66      1800
+   macro avg       0.66      0.66      0.66      1800
+weighted avg       0.66      0.66      0.66      1800
+

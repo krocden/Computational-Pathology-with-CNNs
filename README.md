@@ -37,7 +37,11 @@ pip install -r requirements.txt
 
 ## Usage
 
-Provide basic instructions on how to run the scripts, train the models, or any other relevant steps.
+1. run the `_init.py` the check the cuda condition to see if you are capable to use GPU acceleration
+2. run the model with tweaked hyperparameters, once the model is trained, it will generate a file.
+like `*modelname*_Seed=*seed*.pth` in the `Model/Saved` folder, this is the checkpoint of the model.
+3. run the `ReportDriver.py` with desired seed, which you can find it in `Model/Saved/hyperparameter_log`,
+then you can observe the output and the t-SNE report
 
 ## Challenges & Solutions
 

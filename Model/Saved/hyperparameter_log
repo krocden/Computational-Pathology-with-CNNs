@@ -1,0 +1,12 @@
+seed=6410, hyperparameter:{{learning rate: 0.001, number of epoch: 10, batch size: 60}
+seed=4928, hyperparameter:{learning rate: 0.0001, number of epoch: 10, batch size: 60}
+seed=95240, hyperparameter:{learning rate: 0.0001, number of epoch: 10, batch size: 60 }
+seed=23134, hyperparameter:{learning rate: 1e-05, number of epoch: 10, batch size: 30 }
+seed=5508, hyperparameter:{learning rate: 1e-06, number of epoch: 10, batch size: 30 }
+seed=6436, hyperparameter:{learning rate: 1e-05, number of epoch: 7, batch size: 30 }
+seed=28506, hyperparameter:{learning rate: 1e-05, number of epoch: 7, batch size: 30 }
+seed=70837, hyperparameter:{learning rate: 0.0001, number of epoch: 10, batch size: 32 }
+seed=49483, hyperparameter:{learning rate: 1e-05, number of epoch: 10, batch size: 32 }
+seed=90355, hyperparameter:{learning rate: 1e-06, number of epoch: 10, batch size: 30 }
+seed=67091, hyperparameter:{learning rate: 1e-05, number of epoch: 8, batch size: 30 }
+seed=73917, hyperparameter:{learning rate: 1e-05, number of epoch: 7, batch size: 30 }
