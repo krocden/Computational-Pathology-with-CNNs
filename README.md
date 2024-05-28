@@ -1,6 +1,6 @@
 
 
-Computational Pathology with CNNs[ ![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/116-pvPd9r0IOFpRrVDMUmuK0WFgo33CD?usp=sharing)
+Computational Pathology with CNNs[ ![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HsvvgckLQigXydq_PK6ACCfuw2YZhZ1i?usp=sharing)
 
 
 This repository contains the research and development of machine learning models, particularly Convolutional Neural Networks (CNNs), applied to computational pathology and computer vision tasks.
@@ -27,7 +27,7 @@ We aim to leverage CNNs to automate tissue classification in computational patho
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/jonathan-githubofficial/COMP-432
+git clone https://github.com/krocden/COMP-432
 ```
 
 2. Install the required packages:
