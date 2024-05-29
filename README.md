@@ -50,8 +50,6 @@ then you can observe the output and the t-SNE report
 - **Transfer Learning**: Conducted experiments to fine-tune models across different datasets.
 - **Computational Demands**: Recommended usage of GPU acceleration for training deep CNNs.
 
-Certainly! Here's the updated "Team Members" table with the provided information:
-
 
 ## Team Members
 
